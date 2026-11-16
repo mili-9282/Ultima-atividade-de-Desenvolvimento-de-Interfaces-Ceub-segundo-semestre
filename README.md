@@ -22,6 +22,11 @@ Parte B.  Design do site
  	Descreva em detalhes todos recursos e elementos do seu site.
  	Tire prints e explique com mais detalhes cada parte fundamental do seu site.
 
+Parte B.  Design do site
+ 	Descreva em detalhes sobre o que é seu site, para quê ele serve, e como um usuário pode se manter engajado com seu site.
+ 	Descreva em detalhes todos recursos e elementos do seu site.
+ 	Tire prints e explique com mais detalhes cada parte fundamental do seu site.
+
 Parte C.  Processo de construção do site
 1.	Faça uma redação SEM O USO DE IA dissertando sobre as definições de WCAG, heurísticas de Nielsen, UI/UX, e paletas de cores no desenvolvimento de páginas WEB/Apps aplicadas ao seu site. Dê exemplos, explique a importância do uso das cores e como devem ser escolhidas. Inclua nos seus textos explicações sobre branding, psicologia, acessibilidade e usabilidade.
 2.	Escreva uma documentação, README, explicando toda a construção do seu site passo a passo.
@@ -31,6 +36,12 @@ Parte E.  HTML, CSS, JS, CSS Frameworks
 Sumarize todo seu trabalho.
 •	Apresente todos os scripts JS, CSS, HTML. Copie e cole todos os scripts utilizados ou em caso de haver muitas linhas de código, envie arquivos em anexo.
 
+Parte D.  Referências, IAs usadas, ferramentas aplicadas 
+Liste as referências de IAs usadas, as ferramentas aplicadas e outras referências utilizadas no desenvolvimento do seu site.
+
+Parte E.  HTML, CSS, JS, CSS Frameworks 
+Sumarize todo seu trabalho.
+•	Apresente todos os scripts JS, CSS, HTML. Copie e cole todos os scripts utilizados ou em caso de haver muitas linhas de código, envie arquivos em anexo.
 Inclua (ou cria uma aba somente para criar os elementos pedidos):
 •	Página de Login, Imagens em carrossel, aba de acessibilidade (Modo claro/escuro, fontes maiores, etc)
 APÊNDICE
