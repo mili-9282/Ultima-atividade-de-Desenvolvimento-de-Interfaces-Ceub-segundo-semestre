@@ -3,14 +3,23 @@
 Instruções
 
 •	Leia atentamente o que é pedido em cada questão e entenda as instruções.
+
 •	Entregue sua atividade de maneira ordenada e organizada.
+
 •	Use Github para mostrar as versões de seu projeto.
+
 •	A atividade pode ser entregue em documento Word ou PDF em arquivo único.
+
 •	Escreva um relatório completo sumarizando todo processo de construção de seu site e observações relevantes.
+
 •	Pesquise sobre os conceitos que são abordados.
+
 •	Seu site deve conter no mínimo cartões, abas de pesquisa, seção de contato com formulários, carrossel, imagens, cartões explicativos, modo escuro/claro, rodapé.
+
 •	Aplique o padrão WCAG e análise de contraste.
+
 •	Analise a escolha das cores de seu site por meio da psicologia de cores.
+
 •	Escreva uma seção com as referências de suas pesquisas.
 
 Parte A - Paletas de Cores e WCAG.
