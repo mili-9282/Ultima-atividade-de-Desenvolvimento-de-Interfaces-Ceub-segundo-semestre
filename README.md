@@ -43,6 +43,7 @@ Parte D.  Referências, IAs usadas, ferramentas aplicadas
 Liste as referências de IAs usadas, as ferramentas aplicadas e outras referências utilizadas no desenvolvimento do seu site.
 Parte E.  HTML, CSS, JS, CSS Frameworks 
 Sumarize todo seu trabalho.
+
 •	Apresente todos os scripts JS, CSS, HTML. Copie e cole todos os scripts utilizados ou em caso de haver muitas linhas de código, envie arquivos em anexo.
 
 Parte D.  Referências, IAs usadas, ferramentas aplicadas 
@@ -50,8 +51,10 @@ Liste as referências de IAs usadas, as ferramentas aplicadas e outras referênc
 
 Parte E.  HTML, CSS, JS, CSS Frameworks 
 Sumarize todo seu trabalho.
+
 •	Apresente todos os scripts JS, CSS, HTML. Copie e cole todos os scripts utilizados ou em caso de haver muitas linhas de código, envie arquivos em anexo.
 Inclua (ou cria uma aba somente para criar os elementos pedidos):
+
 •	Página de Login, Imagens em carrossel, aba de acessibilidade (Modo claro/escuro, fontes maiores, etc)
 APÊNDICE
 Apresente links, e formas possíveis de acessar seu site. 
