@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<style>
+  :root {
+    --cor1: #f0f0f0;
+    --cor2: #181818;
+    --tamanhoFonte1: 18px;
+    --tamanhoFonte2: 22px;
+    --tamanhoFonte3: 30px;
+  }
+  body {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: -webkit-fill-available;
+  }
+  img {
+    width: -webkit-fill-available;
+    height: auto;
+  }
+  button, p, input, select, textarea {
+    font-size: var(--tamanhoFonte1);
+    width: -webkit-fill-available;
+  } 
+  a, label{ 
+    font-size: var(--tamanhoFonte2);
+  }
+  h2 {
+    font-size: var(--tamanhoFonte3);
+  }
+  a {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    cursor: pointer;
+  }
+  input, button {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    padding: 10px;
+    margin: 15px;
+  }
+  .outline {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    border: 1px solid var(--cor2);
+    padding: 10px;
+    cursor: pointer;
+  }
+  header {
+    position: fixed;
+    top: 0;
+  }
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login BN BR.</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <a></a>
+          <div>
+            <a>(</a>
+            <a onclick="mudarClaridade()">Claridade</a>
+            <a>)(</a>
+            <a onclick="diminuirTamanho()">- Tamanho</a>
+            <a>)(</a>
+            <a onclick="aumentarTamanho()">+ Tamanho</a>
+            <a>)</a>
+          </div>
+        </nav>
+      </header>
+    <div>
+        <h2>LOGIN Bloco de Notas BR.</h2>
+        <p>Insira abaixo seu nome de usuário e senha para adentrar sua conta.</p>
+        <form>
+          <div>
+            <label for="usr">Nome:</label>
+            <div> <input type="text" id="usr" placeholder="Seu Nome de Usuário"></div>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Senha:</label>
+            <div> <input type="password" id="pwd" placeholder="Sua Senha"><br></div>
+          </div>
+        </form>
+    <button class="outline" type="button" onclick="logar()">Logar no site : Bloco de Notas BR.</button>
+    <img src="https://chat.google.com/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fjpeg&attachment_token=AJGomAbF7EEFI3otO%2FR7VgU1RU%2BRaGYKHSr9OxiAz7Nfy%2FCKk4msAKT7%2B744SmmZD%2FUyoxkL2Q33noChQMyd6TG8wIlZCuftiJ55CxntvA11qgkaUwQ6xyk7ofpAit4HhIsvPnjbyXRIJZyWgATFMZ670nsjq%2BH%2BbRsbW3fys45aq9KCyGFBWwTBK8JyCrdLVHWb3ZNlbrVsfCVCC1eyHzkmMWs0OzUrfLD17p8rYGmTq%2Fhd9vNALsdFJYCOtHnYjNsbFlhVZfonIUHgwen%2FTV1IutqXUvP6mGAJovsa04tLZgerN0hzhNCiO0S%2BXr%2BrCa6kjNn6jycLWXH%2FlB%2FemcHD4OIVhWr3mAS%2B0IRKGhop2%2F6CPr4gAQ5oBvPw2qhMhe6oYRlJ1NT4FaPkdCcxfjN6Rv8PxfNXw8%2BkNZdxbc3mjnu7RCWnW6bAXkl9U%2FGMoWSE46CuiujgmiZh8%2FtGNSRLcSlURIZAS5tLUPcmc50liJOk2iojXnrg%2F5KrqYxiKK6qNLeCbXgr7Y5I9IbCPfdC4hOIlC1w3ccqDnGekDBjsu3GFi9vKbGHwoSqJzdFEBlVVLcveOS8x5uGKx%2Fusv6%2FaNK8tJDSGoc7ETYUt3Lr9bR5JAt6Cmn4RdHDi00n3hIUS0%2F5oVB15KIyHR9s7niJFbC%2FFK5aRpWR&allow_caching=true&sz=w512-k" alt="" width="" height="">
+    <script>
+      function logar() {
+        const username = document.getElementById('usr').value;
+        const password = document.getElementById('pwd').value;
+        if (username === '' || password === '') {
+          window.location.href = 'login.html';          
+          alert('Nome de usuário e/ou senha incompletos. Tente novamente.');
+        } else {
+          window.location.href = 'final.html';
+        }
+      }
+    </script>
+    <script src="fundo_tamanho.js"></script>
+</body>
