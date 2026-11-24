@@ -26,10 +26,6 @@ Parte A - Paletas de Cores e WCAG.
 1.	Defina as paletas de cores escolhidas em seu website.
 2.	Explique a psicologia de cores aplicada a seu site.
 3.	Escreva um texto dissertando sobre a escolha das cores de seu site e suas implicações.
-Parte B.  Design do site
- 	Descreva em detalhes sobre o que é seu site, para quê ele serve, e como um usuário pode se manter engajado com seu site.
- 	Descreva em detalhes todos recursos e elementos do seu site.
- 	Tire prints e explique com mais detalhes cada parte fundamental do seu site.
 
 Parte B.  Design do site
  	Descreva em detalhes sobre o que é seu site, para quê ele serve, e como um usuário pode se manter engajado com seu site.
