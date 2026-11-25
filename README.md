@@ -1,53 +1,34 @@
 # Última atividade de Desenvolvimento de Interfaces Ceub segundo semestre
-## Descrição : 
-Instruções
+## Sumarização do projeto (explicação passo a passo de como o site foi feito) : 
 
-•	Leia atentamente o que é pedido em cada questão e entenda as instruções.
+•	Primeiramente, para construir o site Bloco de Notas BR eu precisaria de 3 arquivos, 2 html, site e login, e um javascript para integração de certas funcionalidades. 
 
-•	Entregue sua atividade de maneira ordenada e organizada.
+•	A estrutura do site era longa, então fixei uma navbar no topo do site para servir de atalho para as diferentes seções da interface com o uso das tags <a> e <section>.
 
-•	Use Github para mostrar as versões de seu projeto.
+•	Após isso, nomeei as seções usando as tags de título e sub-título para customizá-las com as cores do Brasil. 
 
-•	A atividade pode ser entregue em documento Word ou PDF em arquivo único.
+•	Conectei os arquivos html com o javascript para criar funções que controlassem o tamanho das fontes e a alternação entre modo claro e escuro.
 
-•	Escreva um relatório completo sumarizando todo processo de construção de seu site e observações relevantes.
+•	Organizei as tags <style> dos arquivos html para organizálos e padronizar suas tags, além de inserir as variáveis de cores e tamanhos.
 
-•	Pesquise sobre os conceitos que são abordados.
+•	Utilizei a tag de <input> para criar um espaço para senha e um para um nome do usuário e criei um script interno de forma que o botão de enviar (tag <button>) só desse acesso ao site caso ambos os campos estivessem preenchidos, caso não estivessem gerava uma alerta através de um else na mesma função.
 
-•	Seu site deve conter no mínimo cartões, abas de pesquisa, seção de contato com formulários, carrossel, imagens, cartões explicativos, modo escuro/claro, rodapé.
+•	Coloquei uma imagem na página de login.
 
-•	Aplique o padrão WCAG e análise de contraste.
+• Criei espaços com a tag <textarea>	para compor os 10 blocos de notas.
 
-•	Analise a escolha das cores de seu site por meio da psicologia de cores.
+•	Criei com o uso de tags <form> e <input>s para criar um formulário de contato.
 
-•	Escreva uma seção com as referências de suas pesquisas.
+•	Criei com as tags <section> e <div> um carrossel de imagens, e adicionei as próprias. 
 
-Parte A - Paletas de Cores e WCAG.
-1.	Defina as paletas de cores escolhidas em seu website.
-2.	Explique a psicologia de cores aplicada a seu site.
-3.	Escreva um texto dissertando sobre a escolha das cores de seu site e suas implicações.
+•	Usei das tags <label>, <span> e <div> para criar uma barra de pesquisa com cartões que contém a redação solicitada (e a escrevi com informações de diversos sites) além da sumarização.
 
-Parte B.  Design do site
- 	Descreva em detalhes sobre o que é seu site, para quê ele serve, e como um usuário pode se manter engajado com seu site.
- 	Descreva em detalhes todos recursos e elementos do seu site.
- 	Tire prints e explique com mais detalhes cada parte fundamental do seu site.
+•	Usei a tag <p> para dissertar a respeito do site, seus detalhes e objetivos, e listar referências.
 
-Parte C.  Processo de construção do site
-1.	Faça uma redação SEM O USO DE IA dissertando sobre as definições de WCAG, heurísticas de Nielsen, UI/UX, e paletas de cores no desenvolvimento de páginas WEB/Apps aplicadas ao seu site. Dê exemplos, explique a importância do uso das cores e como devem ser escolhidas. Inclua nos seus textos explicações sobre branding, psicologia, acessibilidade e usabilidade.
-2.	Escreva uma documentação, README, explicando toda a construção do seu site passo a passo.
+•	Criei uma nota de rodapé de direitos reservados com a tag <footer>.
 
-Parte D.  Referências, IAs usadas, ferramentas aplicadas 
-Liste as referências de IAs usadas, as ferramentas aplicadas e outras referências utilizadas no desenvolvimento do seu site.
+•	Consertei as partes disfuncionais / indesejadas das tags <style>.
 
-Parte E. 
+•	Escrevi esta sumarização.
 
-HTML, CSS, JS, CSS Frameworks 
-
-Sumarize todo seu trabalho.
-
-•	Apresente todos os scripts JS, CSS, HTML. Copie e cole todos os scripts utilizados ou em caso de haver muitas linhas de código, envie arquivos em anexo.
-Inclua (ou cria uma aba somente para criar os elementos pedidos):
-
-•	Página de Login, Imagens em carrossel, aba de acessibilidade (Modo claro/escuro, fontes maiores, etc)
-APÊNDICE
-Apresente links, e formas possíveis de acessar seu site. 
+•	Lancei tudo no Github.
