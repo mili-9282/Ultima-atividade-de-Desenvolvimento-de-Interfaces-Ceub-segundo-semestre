@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>  
+  :root {
+    --cor1: #f0f0f0;
+    --cor2: #181818;
+    --tamanhoFonte1: 18px;
+    --tamanhoFonte2: 22px;
+    --tamanhoFonte3: 30px;
+  }
+  .slide-wrapper{
+    position: relative;
+    width: -webkit-fill-available;
+    margin: 0 auto;
+  }
+  .slider{
+    display: flex;
+    height: 500px;
+    overflow-x: auto;
+  }
+  .card {
+    color: var(--cor2);
+    background-color: var(--cor1);
+    border: 1px solid var(--cor2);
+    position: relative;
+    z-index: -1;
+  }
+  body {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    justify-content: center;
+    align-items: center;
+    width: -webkit-fill-available;
+  }
+  button, p, select, textarea {
+    font-size: var(--tamanhoFonte1);
+    width: -webkit-fill-available;
+    background-color: var(--cor1);
+    color: var(--cor2);
+  }
+  h4 {
+    font-size: var(--tamanhoFonte2);
+    color: var(--cor2);
+  } 
+  textarea {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    border: 1px solid var(--cor2);
+  }
+  a{ 
+    font-size: var(--tamanhoFonte2);
+    background-color: solid;
+    color: #012369;
+    background-color: #FEDD00;
+    cursor: pointer;
+  }
+  label {
+    font-size: var(--tamanhoFonte2);
+    background-color: var(--cor1);
+    color: var(--cor2);
+  }
+  h2 {
+    font-size: var(--tamanhoFonte3);
+    background-color: solid;
+    background-color: #009739;
+    color: #FEDD00;
+  }
+  h1 {
+    font-size: var(--tamanhoFonte3);
+    background-color: solid;
+    background-color: #FEDD00;
+    color: #012169;
+  }
+  footer, h3 {
+    font-size: var(--tamanhoFonte1);
+    background-color: solid;
+    background-color: #FEDD00;
+    color: #012169;
+    text-align: center;
+  }
+  .textarea-container {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    padding: 10px;
+    margin: 15px;
+    width: 95%;
+    font-size: var(--tamanhoFonte1);
+    height: 400px;
+  }
+  .search, #searchInput {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    padding: 10px;
+    margin: 15px;
+    width: 95%;
+    font-size: var(--tamanhoFonte1);
+    justify-content: center;
+  } 
+  section {
+    margin: 15px;
+    padding: 20px;
+  }
+  .outline {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    border: 1px solid var(--cor2);
+    padding: 10px;
+    cursor: pointer;
+  }
+  header {
+    background-color: solid;
+    background-color: #FEDD00;
+    color: #012369;
+    position: fixed;
+    top: 0;
+  }
+  input{
+    background-color: var(--cor1);
+    color: var(--cor2);
+    font-size: var(--tamanhoFonte1);
+  }
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bloco de Notas BR.</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <h2 >Blocos de Notas BR</h2>
+      <div>
+        <a>(</a>
+        <a href="#git">Github</a>
+        <a>)(</a>
+        <a href="#sobre">Sobre o site</a>
+        <a>)(</a>
+        <a href="#di">Sobre o DI</a>
+        <a>)(</a> 
+        <a href="#refe">Referências</a>
+        <a>)(</a>
+        <a onclick="mudarClaridade()">Claridade</a>
+        <a>)(</a>
+        <a onclick="diminuirTamanho()">- Tamanho</a>
+        <a>)(</a>
+        <a onclick="aumentarTamanho()">+ Tamanho</a>
+        <a>)(</a>
+        <a href="#cont">Contato</a>
+        <a>)(</a>
+        <a href="#b1">Bloco 0</a>
+        <a>)(</a>
+        <a href="#b2">Bloco 1</a>
+        <a>)(</a>
+        <a href="#b3">Bloco 2</a>
+        <a>)(</a>
+        <a href="#b4">Bloco 3</a>
+        <a>)(</a>
+        <a href="#b5">Bloco 4</a>
+        <a>)(</a>
+        <a href="#b6">Bloco 5</a>
+        <a>)(</a>
+        <a href="#b7">Bloco 6</a>
+        <a>)(</a>
+        <a href="#b8">Bloco 7</a>
+        <a>)(</a>
+        <a href="#b9">Bloco 8</a>
+        <a>)(</a>
+        <a href="#b10">Bloco 9</a>
+        <a>)</a>
+      </div>
+    </nav>
+  </header>
+  <div><br><br><br><br><br><br><br><br>
+    <section id="git">
+      <h2>Github.</h2>
+      <p>https://github.com/mili-9282/Ultima-atividade-de-Desenvolvimento-de-Interfaces-Ceub-segundo-semestre</p>
+    </section>
+  </div>
+  <div>
+    <section id="sobre">
+      <h1>Sobre o site (Parte A e B).</h1>
+      <p>Oi, seja muito bem-vindo(a) ao seu confiável site para anotar seus afazeres diários, compromissos semanais, e desabafos ocasionais o Bloco de Notas Brasileiro. Este site tem por objetivo oferecer um serviço gratuito de bloco de notas disponível 24 horas por dia, 7 dias por semana, para todos os cidadãos do brasileiros que necessitam de um acesso rápido a qualquer lugar de suas anotações, o site possui elementos de acessibiladade na barra do topo, que permitem que o usuário aumente ou diminua o tamanho do texto, alterne entre um modo calro e um escuro, além de botões para transportá-lo através dos diferentes blocos; uma barra de pesquisa embutida na redação para encontrar seus diferentes assuntos; um rodapé com direitos reservados; um formulário com minhas informações de contato; um carrossel de imagens que mostra difentes partes do site além de resultados de testes; um sistema de login que necessita do nome e senha do usuário para acessar a seção principal a qual abriga os principais elementos do site : 10 blocos para anotações que eu garanto, com 50% de certeza, te manterão engajado, visto que é extremamente fácil acompanhar seus diferentes lembretes através das diversas divisões, cada uma com 16 linhas para escrita, presentes no site para o seu  uso.<br>Aqui estão algumas das imagens promocionais do site em um carrossel : </p>
+      <section class="container">
+        <div class="slider-wrapper">
+          <div class="slider">
+            <img id="slide1" src="s1.jpg" alt="Imagem da bandeira do Brasil com textura de vento brilhosa." (para usuários de baixa acessibilidade visual)/>
+            <img id="slide2" src="s2.png" alt="Imagem do Adobe Color Contrast Checker mostrando a validação de contraste."/>
+            <img id="slide3" src="s3.png" alt="Imagem da barra de navegação para os cards."/>
+            <img id="slide4" src="s4.png" alt="Imagem do formulário de contato e modo escuro."/>
+            <img id="slide5" src="s5.png" alt="Imagem de um exemplo de uso do bloco de notas."/>
+            <img id="slide6" src="s6.png" alt="Imagem do Github do projeto."/>
+            <img id="slide7" src="s7.png" alt="Imagem da tela de login."/>
+            <img id="slide8" src="s8.png" alt="Imagem de um dos 3 arquivos que formam o site."/>
+          </div>
+          <div>
+            <a href="#slide1"></a>
+            <a href="#slide2"></a>
+            <a href="#slide3"></a>
+            <a href="#slide4"></a>
+            <a href="#slide5"></a>
+            <a href="#slide6"></a>
+            <a href="#slide7"></a>
+            <a href="#slide8"></a>
+          </div>
+        </div>
+      </section>
+      <p>Como eu espero que você possa ver as paletas de cores cores utilizadas no Bloco de Notas BR são verde, amarelo, azul, branco e preto sendo as primeiras possuindo os exatos valores rgb da bandeira do Brasil, a escolha destes tons foi feita para homenagear a pátria além de transmitir as sensações de clareza, relaxamento, fidelidade e honestidade através das tonalidades de verde, amarelo, azul, e branco respectivamente.</p>
+    </section>
+  </div>
+  <div>
+    <section id="di">
+      <h2  >Sobre o DI (Parte C e E (sumarização)).</h2>
+      <div class="search">
+        <label for="searchInput">
+          <span class="material-symbols-outlined"></span>
+        </label>
+        <input type="text" id="searchInput" placeholder="Barra de pesquisa">
+      </div>
+      <div class="card-container">
+        <div class="card">
+
+        </div>
+      </div>
+    </section>
+  </div>
+  <div> 
+  <section id="refe"  >
+      <h1  >Referências.</h1>
+      <p>https://www.youtube.com/watch?v=wvm84U4PIrE<br>https://www.youtube.com/watch?v=-0e-mLEn_ck&list=PLMbclvogjXZWgHgQcY5H4MvKtEW8q53cC&index=1<br>https://www.flagcolorcodes.com/brazil<br>https://www.w3schools.com<br>https://tecnoblog.net/responde/o-que-e-html-entenda-para-que-serve-e-como-funciona-a-linguagem-de-marcacao/<br>https://www.docsity.com/pt/docs/caracteristicas-gerais-do-html/4712155/<br>https://meusiteweb.com/glossario/melhores-praticas-de-html/#google_vignette<br>https://medium.com/@wilfison/10-melhores-pr%C3%A1ticas-para-html-ce664e41f45b<br>https://salaonline.ceub.br/course/view.php?id=11226<br>https://blog.betrybe.com/desenvolvimento-web/usabilidade/<br>https://www.linkedin.com/advice/3/how-can-branding-improve-user-interface-design-uwvnc?lang=pt&lang=pt<br>https://color.adobe.com/create/color-contrast-analyzer<br>https://agencianobleman.com.br/glossario/paleta-de-cores-definicao-e-importancia-no-design/<br>https://hellouniweb.com/pt/columns/wcag/<br>https://www.psicanaliseclinica.com/psicologia-das-cores/<br>https://revistaarqdesign.com.br/cores-no-design-ux-ui-melhores-praticas-para-sites-e-aplicativos/#11_Como_as_cores_podem_contribuir_para_a_identidade_da_marca_em_um_projeto_de_design_UXUI<br>https://www.youtube.com/watch?v=4zdo4D9DA50<br>https://www.youtube.com/watch?v=2umsItNQ9mI<br>https://www.nngroup.com/articles/ten-usability-heuristics/<br>https://www.youtube.com/watch?v=McPdzhLRzCg<br>Ferramentas : Adobe Color Contrast Checker.<br>IAs : Nenhuma.</p>
+  </section>  
+  </div>
+    <div>
+    <section id="cont">
+      <h2  >Contato.</h2>
+      <form action="https://formsubmit.co/asscunha2008@sempreceub.com" method="POST">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </div>
+  <div>
+    <section id="b1"  >
+      <h1>Bloco 0.</h1>
+      <textarea rows="16" cols="33" minlength="20"></textarea>
+    </section>
+  </div>
+  <div>
+    <section id="b2"  >
+      <h2  >Bloco 1.</h2>
+      <textarea rows="16" cols="33" minlength="20"></textarea>
+    </section>
+  </div>
+  <div>
+    <section id="b3"  >
+     <h1  >Bloco 2.</h1>
+      <textarea rows="16" cols="33" minlength="20"></textarea>
+    </section>
+  </div>
+  <div>
+    <section id="b4"  >
+      <h2  >Bloco 3.</h2>
+      <textarea rows="16" cols="33" minlength="20"></textarea>
+    </section>
+  </div>
+
+  <div>
+    <section id="b5"  >
+      <h1  >Bloco 4.</h1>
+      <textarea rows="16" cols="33" minlength="20"></textarea>
+    </section>
+  </div>
+
+  <div>
+    <section id="b6"  >
+      <h2  >Bloco 5.</h2>
+      <textarea rows="16" cols="33" minlength="20"></textarea>
+    </section>
+  </div>
+  <div>
+    <section id="b7"  >
+      <h1>Bloco 6.</h1>
+      <textarea rows="16" cols="33" minlength="20"></textarea>
+    </section>
+  </div>
+    <div>
+    <section id="b8"  >
+      <h2>Bloco 7.</h2>
+      <textarea rows="16" cols="33" minlength="20"></textarea>
+    </section>
+  </div>
+    <div>
+    <section id="b9"  >
+      <h1>Bloco 8.</h1>
+      <textarea rows="16" cols="33" minlength="20"></textarea>
+    </section>
+  </div>
+    <div>
+    <section id="b10"  >
+      <h2>Bloco 9.</h2>
+      <textarea rows="16" cols="33" minlength="20"></textarea>
+    </section>
+  </div>
+    <div>
+   <footer>
+    <h3>&copy; 2026 Blocos de Notas BR. Todos os direitos reservados à pessoa física Antonio de Sousa e Silva Cunha.</h3>
+   </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="fundo_tamanho.js"></script>
+</body>
+   </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="fundo_tamanho_pesquisa-cards.js"></script>
+</body>
